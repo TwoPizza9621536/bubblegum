@@ -1,8 +1,8 @@
 local colors = {
-	dark_gray = "#303030",
-	med_gray_hi = "#444444",
-	med_gray_lo = "#3A3A3A",
-	light_gray = "#B2B2B2",
+	black = "#303030",
+	gray1 = "#B2B2B2",
+	gray2 = "#444444",
+	gray3 = "#3A3A3A",
 	green = "#AFD787",
 	blue = "#87AFD7",
 	purple = "#AFAFD7",
@@ -14,30 +14,30 @@ local colors = {
 local bubblegum = {}
 
 bubblegum.normal = {
-	a = { bg = colors.green, fg = colors.dark_gray },
-	b = { bg = colors.med_gray_lo, fg = colors.light_gray },
-	c = { bg = colors.med_gray_hi, fg = colors.green },
+	a = { bg = colors.green, fg = colors.black },
+	b = { bg = colors.gray3, fg = colors.gray1 },
+	c = { bg = colors.gray2, fg = colors.green },
 }
 
 bubblegum.insert = {
-	a = { bg = colors.blue, fg = colors.med_gray_hi },
-	c = { bg = colors.med_gray_hi, fg = colors.blue },
+	a = { bg = colors.blue, fg = colors.gray2 },
+	c = { bg = colors.gray2, fg = colors.blue },
 }
 
 bubblegum.visual = {
-	a = { bg = colors.pink, fg = colors.dark_gray },
-	c = { bg = colors.med_gray_hi, fg = colors.pink },
+	a = { bg = colors.pink, fg = colors.black },
+	c = { bg = colors.gray2, fg = colors.pink },
 }
 
 bubblegum.replace = {
-	a = { bg = colors.red, fg = colors.dark_gray },
-	c = { bg = colors.med_gray_hi, fg = colors.red },
+	a = { bg = colors.red, fg = colors.black },
+	c = { bg = colors.gray2, fg = colors.red },
 }
 
 bubblegum.inactive = {
-	a = { bg = colors.med_gray_hi, fg = colors.light_gray },
-	b = { bg = colors.med_gray_hi, fg = colors.light_gray, gui = "bold" },
-	c = { bg = colors.med_gray_hi, fg = colors.light_gray },
+	a = { bg = colors.gray2, fg = colors.gray1 },
+	b = { bg = colors.gray2, fg = colors.gray1, gui = "bold" },
+	c = { bg = colors.gray2, fg = colors.gray1 },
 }
 
 return bubblegum

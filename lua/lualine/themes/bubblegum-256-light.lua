@@ -1,8 +1,8 @@
 local colors = {
 	white = "#FFFFFF",
-	med_gray_hi = "#444444",
+	med_gray_hi = "#E4E4E4",
 	med_gray_lo = "#3A3A3A",
-	light_gray = "#B2B2B2",
+	gray1 = "#626262",
 	green = "#AFD787",
 	blue = "#87AFB7",
 	purple = "#AFAFD7",
@@ -15,7 +15,7 @@ local bubblegum = {}
 
 bubblegum.normal = {
 	a = { bg = colors.green, fg = colors.white },
-	b = { bg = colors.med_gray_lo, fg = colors.light_gray },
+	b = { bg = colors.med_gray_lo, fg = colors.gray1 },
 	c = { bg = colors.med_gray_hi, fg = colors.green },
 }
 
@@ -35,9 +35,9 @@ bubblegum.replace = {
 }
 
 bubblegum.inactive = {
-	a = { bg = colors.med_gray_hi, fg = colors.light_gray },
-	b = { bg = colors.med_gray_hi, fg = colors.light_gray, gui = "bold" },
-	c = { bg = colors.med_gray_hi, fg = colors.light_gray },
+	a = { bg = colors.med_gray_hi, fg = colors.gray1 },
+	b = { bg = colors.med_gray_hi, fg = colors.gray1, gui = "bold" },
+	c = { bg = colors.med_gray_hi, fg = colors.gray1 },
 }
 
 return bubblegum
